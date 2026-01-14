@@ -1,9 +1,10 @@
 # AlwaysMap Branding
 
-Logos, colors, and fonts for AlwaysMap communications and digital assets.
+![](lockup-horizontal-color-light@2x.png)
 
 ## Background
 
+Logos, colors, and fonts for AlwaysMap communications and digital assets.
 The AlwaysMap color palette draws from the rich tradition of cartographic design, specifically the color conventions established by topographic and thematic mapmakers over centuries.
 
 - **Chartreuse Pear (Primary)** — This warm yellow-green references the hypsometric tints used in topographic maps to indicate lowland vegetation and fertile plains. It evokes the "pear green" pigments found in historic Swiss topographic maps and USGS terrain shading, suggesting growth, journey origins, and the landscapes through which families traveled.
@@ -23,3 +24,19 @@ The AlwaysMap color palette draws from the rich tradition of cartographic design
 - Vermilion is an accent color — use sparingly for CTAs, destination markers, and emphasis.
 - Text Dark provides warm contrast on light backgrounds.
 - Text Light is optimized for readability on dark backgrounds with a subtle warm tint.
+
+## Generating PNGs
+
+To regenerate PNG files from the SVG sources:
+
+```bash
+./generate-pngs.sh
+```
+
+This script:
+- Uses `resvg` (a secure, static Rust binary) for conversion
+- Downloads the Josefin Sans font from Google Fonts to `.fonts/` directory
+- Explicitly loads the font into resvg to ensure faithful rendering
+- Generates both 1x and 2x resolution PNGs for all SVG files
+
+Prerequisites: `resvg` must be installed (`brew install resvg` on macOS)
