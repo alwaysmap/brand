@@ -1,6 +1,6 @@
 # AlwaysMap Branding
 
-![](lockup-horizontal-color-light@2x.png)
+![](lockup.png)
 
 ## Background
 
